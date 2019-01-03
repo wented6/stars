@@ -8,7 +8,6 @@ const fetchVideoInfo = require('youtube-info');
 
 const yt_api_key = "AIzaSyDeoIH0u1e72AtfpwSKKOSy3IPp2UHzqi4";
 const prefix = '#';
-const discord_token = process.env.BOT_TOKEN;
 
 client.on('ready', function() {
     console.log(`i am ready ${client.user.username}`);
@@ -2704,4 +2703,8 @@ client.on('message', message => {
      .setColor('#502faf').setAuthor(`${message.author.username}'`, message.author.avatarURL).setDescription('``تم انشاء 50 لون بنجاح ``')});
     }
 	});
+
+
+
+Client.login(process.env.BOT_TOKEN);
        
